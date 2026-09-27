@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: white;
+  line-height: 1.5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: lightblue;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: #174a80;
+}
+
+main {
+  margin: 20px 0;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eee;
+  text-align: center;
+}
+
+/* Task 1 */
+.cards {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #999;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.card:hover {
+  box-shadow: 0 3px 8px #aaa;
+}
+
+/* Task 2 */
+.grid-page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 15px;
+}
+
+.grid-page .header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 15px;
+  background-color: #eee;
+}
+
+.sidebar ul {
+  padding-left: 20px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.content {
+  grid-area: main;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #999;
+}
+
+.grid-page footer {
+  grid-area: footer;
+  margin: 0;
+}
+
+/* Task 3 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 180px;
+  gap: 15px;
+}
+
+.photo {
+  position: relative;
+  margin: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo figcaption {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background-color: black;
+  color: white;
+}
+
+.photo:hover figcaption,
+.photo:focus figcaption,
+.photo:target figcaption {
+  display: block;
+}
+
+/* Task 4 */
+.portfolio {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.about {
+  padding: 15px;
+  background-color: #eee;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .gallery,
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+}
+
+@media (hover: none) {
+  .photo figcaption {
+    display: block;
+  }
+}
