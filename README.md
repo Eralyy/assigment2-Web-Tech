@@ -6,7 +6,7 @@ Course: Web Technologies
 
 ## How to open
 
-Download and extract the project, then open `index.html` in a browser. Keep all the folders together. No installation is needed.
+Download and extract the project, then open "index.html" in a browser. Keep all the folders together. No installation is needed.
 
 ## Part 1: Flexbox
 
@@ -14,7 +14,7 @@ Download and extract the project, then open `index.html` in a browser. Keep all 
 
 ![Navigation bar](screenshots/task-0-navigation.png)
 
-The header uses Flexbox. The logo is on the left and the links are on the right. `align-items: center` centers them vertically, and `gap` adds space between the links.
+The header uses Flexbox. The logo is on the left and the links are on the right. "align-items: center" centers them vertically, and "gap" adds space between the links.
 
 ### Task 1: Card Row
 
@@ -50,16 +50,3 @@ The pages use the same CSS file. The main steps were creating the HTML, adding t
 
 On screens up to 600px wide, the cards and grid columns stack vertically. The pages were checked at desktop and phone sizes, including the links, buttons and image captions.
 
-## Photo credits
-
-Photos are from [Lorem Picsum](https://picsum.photos/), under the [Unsplash License](https://unsplash.com/license). Photographer names and original links come from Picsum's image information.
-
-- Forest: [Paul Jarvis](https://unsplash.com/photos/6J--NXulQCs)
-- Waterfall: [Paul Jarvis](https://unsplash.com/photos/NYDo21ssGao)
-- Green valley: [Jerry Adney](https://unsplash.com/photos/_WiFMBRT7Aw)
-- Mountains: [Go Wild](https://unsplash.com/photos/V0yAek6BgGk)
-- City: [Oleg Chursin](https://unsplash.com/photos/IoCWq07GaG4)
-- Village: [Margaret Barley](https://unsplash.com/photos/Qo51KwK1dKg)
-- Lighthouse: [Tony Naccarato](https://unsplash.com/photos/-kEr-QltARg)
-- Canal town: [Linh Nguyen](https://unsplash.com/photos/agkblvPff5U)
-- Fjord: [Alexey Topolyanskiy](https://unsplash.com/photos/-oWyJoSqBRM)
