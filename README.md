@@ -6,7 +6,7 @@ Course: Web Technologies
 
 ## How to open
 
-Open `index.html` in a browser. Keep the `css` and `images` folders next to it. All five tasks are on this page. No installation is needed.
+Open index.html in a browser. Keep the css and images folders next to it. All five tasks are on this page. No installation is needed.
 
 ## Part 1: Flexbox
 
@@ -14,7 +14,7 @@ Open `index.html` in a browser. Keep the `css` and `images` folders next to it. 
 
 ![Navigation bar](screenshots/task-0-navigation.png)
 
-The header uses Flexbox, with the logo on the left and links on the right. The links jump to sections using their IDs. `align-items: center` centers the header items vertically, and `gap` separates the links.
+The header uses Flexbox, with the logo on the left and links on the right. The links jump to sections using their IDs. align-items: center centers the header items vertically, and gap separates the links.
 
 ### Task 1: Card Row
 
@@ -46,10 +46,10 @@ The portfolio is a section of the same page. It has a Flexbox header, a Grid mai
 
 ## Main files
 
-- `index.html`: navigation and all five tasks.
-- `css/style.css`: layout, spacing, hover states and mobile styles.
-- `images/`: the nine gallery photos.
-- `screenshots/`: screenshots for this report.
+-index.html: navigation and all five tasks.
+-css/style.css: layout, spacing, hover states and mobile styles.
+-images/: the nine gallery photos.
+-screenshots/: screenshots for this report.
 
 ## Work summary
 
