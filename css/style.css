@@ -42,6 +42,10 @@ main {
   margin: 20px 0;
 }
 
+main > section {
+  margin-top: 35px;
+}
+
 button {
   padding: 8px 12px;
   cursor: pointer;
@@ -76,7 +80,7 @@ footer {
   object-fit: cover;
 }
 
-.card button {
+.card form {
   align-self: flex-start;
   margin-top: auto;
 }
@@ -97,8 +101,10 @@ footer {
   gap: 15px;
 }
 
-.grid-page .header {
+.grid-header {
   grid-area: header;
+  padding: 15px;
+  background-color: lightblue;
 }
 
 .sidebar {
@@ -165,6 +171,7 @@ footer {
 
 /* Task 4 */
 .portfolio {
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
@@ -179,7 +186,7 @@ footer {
   border: 1px solid #999;
 }
 
-.project h3 {
+.project h4 {
   margin: 0;
 }
 

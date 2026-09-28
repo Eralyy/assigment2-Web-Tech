@@ -6,7 +6,7 @@ Course: Web Technologies
 
 ## How to open
 
-Download and extract the project, then open "index.html" in a browser. Keep all the folders together. No installation is needed.
+Open `index.html` in a browser. Keep the `css` and `images` folders next to it. All five tasks are on this page. No installation is needed.
 
 ## Part 1: Flexbox
 
@@ -14,13 +14,13 @@ Download and extract the project, then open "index.html" in a browser. Keep all 
 
 ![Navigation bar](screenshots/task-0-navigation.png)
 
-The header uses Flexbox. The logo is on the left and the links are on the right. "align-items: center" centers them vertically, and "gap" adds space between the links.
+The header uses Flexbox, with the logo on the left and links on the right. The links jump to sections using their IDs. `align-items: center` centers the header items vertically, and `gap` separates the links.
 
 ### Task 1: Card Row
 
 ![Three cards](screenshots/task-1-cards.png)
 
-There are three cards with an image, title, text and button. Flexbox gives the cards equal height in the desktop row. A shadow appears on hover. The buttons open the photos in the gallery.
+Three cards contain an image, title, text and button. Flexbox stretches them to equal height in the desktop row. Each card is a flex column, and an automatic top margin puts its form and button at the bottom. A shadow appears on hover.
 
 ## Part 2: Grid System
 
@@ -28,25 +28,31 @@ There are three cards with an image, title, text and button. Flexbox gives the c
 
 ![Grid layout](screenshots/task-2-grid-layout.png)
 
-This page uses four named areas: header, sidebar, main and footer. The sidebar is on the left. The header and footer cover both columns.
+This layout example has four named grid areas: header, sidebar, main and footer. The sidebar is on the left, and the main content is on the right. The header and footer span both columns.
 
 ### Task 3: Image Gallery
 
 ![Nine images with a caption](screenshots/task-3-gallery.png)
 
-The gallery uses three equal columns and 180px rows. There are nine photos with 15px gaps. Hovering over a photo shows its caption.
+The gallery has nine photos in three equal columns with 180px rows and 15px gaps. Captions appear on hover, keyboard focus or when a photo is the link target. They stay visible on devices without hover.
 
 ## Part 3: Combining Flexbox and Grid
 
 ### Task 4: Portfolio Page
 
-![Portfolio page](screenshots/task-4-portfolio.png)
+![Portfolio section](screenshots/task-4-portfolio.png)
 
-The header uses Flexbox. The main part uses Grid, with projects on the left and information about me on the right. Each project card uses a column Flexbox layout.
+The portfolio is a section of the same page. It has a Flexbox header, a Grid main area with projects on the left and About Me on the right, and a footer across the bottom. Each project card uses a column Flexbox layout.
+
+## Main files
+
+- `index.html`: navigation and all five tasks.
+- `css/style.css`: layout, spacing, hover states and mobile styles.
+- `images/`: the nine gallery photos.
+- `screenshots/`: screenshots for this report.
 
 ## Work summary
 
-The pages use the same CSS file. The main steps were creating the HTML, adding the Flexbox and Grid layouts, and checking the pages in a browser. A small JavaScript function opens the pages when a card button is clicked.
+The project uses HTML and CSS only. The tasks were arranged as sections, then styled with Flexbox and Grid. The menu uses normal links. The six buttons are submit buttons inside small GET forms whose actions point to section or photo IDs. The browser handles those jumps without JavaScript, and the forms have no data fields.
 
-On screens up to 600px wide, the cards and grid columns stack vertically. The pages were checked at desktop and phone sizes, including the links, buttons and image captions.
-
+At 600px and below, the layouts stack into one column. The page was checked at desktop and phone widths, with JavaScript disabled, including menu links, all six buttons and photo captions.
